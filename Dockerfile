@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 7860
 
 # Start Streamlit, binding to the platform port if provided
-CMD ["sh", "-c", "streamlit run app.py --server.port=${PORT:-7860} --server.address=0.0.0.0"]
+CMD ["sh", "-c", "streamlit run pipeline.py --server.port=${PORT:-7860} --server.address=0.0.0.0"]
